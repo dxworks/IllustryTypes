@@ -1,0 +1,19 @@
+{
+    "name": "illustrytypes",
+    "version": "0.0.1",
+    "description": "A module for Illustry Types",
+    "main": "index.js",
+    "scripts": {
+        "generate:types": "tsc index.ts --declaration --emitDeclarationOnly --outfile Illustry.d.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dxworks/IllustryTypes.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dxworks/IllustryTypes/issues"
+    },
+    "homepage": "https://github.com/dxworks/IllustryTypes#readme"
+}
