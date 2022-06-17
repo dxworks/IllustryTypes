@@ -6,7 +6,7 @@ declare module "types/fileproperties" {
     }
 }
 declare module "types/illustrations" {
-    export enum IllustrationTypes {
+    export const enum IllustrationTypes {
         CHART = "chart",
         WORLD_CLOUD = "word-cloud",
         PLOTLY = "plotly",

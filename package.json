@@ -1,6 +1,6 @@
 {
     "name": "@dxworks/illustrytypes",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A module for Illustry Types",
     "publishConfig": {
         "access": "public",
