@@ -101,8 +101,18 @@ declare module "types/project" {
         lastModified?: Date;
     }
 }
+declare module "types/queries" {
+    export interface TimelineQuery {
+        searchedText?: string;
+        fromDate?: string;
+        toDate?: string;
+        illustrationName: string;
+        projectName: string;
+    }
+}
 declare module "index" {
     export { FileProperties } from "types/fileproperties";
     export { IllustrationTypes, Illustration, IllustrationUpdate, TimelineEventTag, TimelineEvent, Timeline, CalendarHeatmap, NodeLink, CalendarMatrix, Node, Link, CalendarData } from "types/illustrations";
     export { Project } from "types/project";
+    export { TimelineQuery } from "types/queries";
 }
