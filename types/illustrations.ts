@@ -23,6 +23,15 @@ export interface Illustration {
   lastModified?: Date;
 }
 
+export interface IllustrationFilter {
+  projectName?: string;
+  type?: IllustrationTypes | IllustrationTypes[];
+  description?: string;
+  name?: string;
+  tags?: string[];
+  createdAt?: Date;
+  lastModified?: Date;
+}
 export interface IllustrationUpdate {
   projectName: string;
   type: IllustrationTypes | IllustrationTypes[];
@@ -74,19 +83,19 @@ export interface CalendarMatrix {
   calendarData: CalendarData[];
 }
 
- 
+
 //Details for FLG HEB Sankey And Dot
 export interface Node {
   group: string;
   id?: string;
-  properties?:any| any[]
+  properties?: any | any[]
 }
 
 export interface Link {
   source: string;
   target: string;
   value: number;
-  properties?: any| any[];
+  properties?: any | any[];
   style?: any;
 }
 
@@ -96,4 +105,4 @@ export interface CalendarData {
   year: number;
   category: string;
 }
- 
+

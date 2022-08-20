@@ -29,6 +29,15 @@ declare module "types/illustrations" {
         createdAt?: Date;
         lastModified?: Date;
     }
+    export interface IllustrationFilter {
+        projectName?: string;
+        type?: IllustrationTypes | IllustrationTypes[];
+        description?: string;
+        name?: string;
+        tags?: string[];
+        createdAt?: Date;
+        lastModified?: Date;
+    }
     export interface IllustrationUpdate {
         projectName: string;
         type: IllustrationTypes | IllustrationTypes[];
@@ -100,6 +109,12 @@ declare module "types/project" {
         createdAt?: Date;
         lastModified?: Date;
     }
+    export interface ProjectFilter {
+        name?: string;
+        description?: string;
+        createdAt?: Date;
+        lastModified?: Date;
+    }
 }
 declare module "types/queries" {
     export interface TimelineQuery {
@@ -112,7 +127,7 @@ declare module "types/queries" {
 }
 declare module "index" {
     export { FileProperties } from "types/fileproperties";
-    export { IllustrationTypes, Illustration, IllustrationUpdate, TimelineEventTag, TimelineEvent, Timeline, CalendarHeatmap, NodeLink, CalendarMatrix, Node, Link, CalendarData } from "types/illustrations";
-    export { Project } from "types/project";
+    export { IllustrationTypes, IllustrationFilter, Illustration, IllustrationUpdate, TimelineEventTag, TimelineEvent, Timeline, CalendarHeatmap, NodeLink, CalendarMatrix, Node, Link, CalendarData } from "types/illustrations";
+    export { Project, ProjectFilter } from "types/project";
     export { TimelineQuery } from "types/queries";
 }
