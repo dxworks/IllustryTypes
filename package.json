@@ -1,13 +1,15 @@
 {
     "name": "@dxworks/illustrytypes",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A module for Illustry Types",
     "publishConfig": {
         "access": "public",
         "registry": "https://npm.pkg.github.com"
     },
     "types": "illustry.d.ts",
-    "files": ["illustry.d.ts"],
+    "files": [
+        "illustry.d.ts"
+    ],
     "scripts": {
         "generate:types": "tsc index.ts --declaration --emitDeclarationOnly --outfile illustry.d.ts"
     },
